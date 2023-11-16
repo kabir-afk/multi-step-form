@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  background-color: hsl(217, 100%, 97%);
+}
+
+.hero-container {
+  width: 75%;
+  height: 97vh;
+  margin: 5% auto;
+  padding: 1em;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  display: flex;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+nav {
+  background-image: url("/public/assets/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  width: 278px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+ul {
+  list-style: none;
+  width: 80%;
+}
+
+.nav-item {
+  width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  padding: 1em 0;
+}
+
+.item-number {
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+  padding: 0.5em 0.75em;
+  margin-right: 1em;
+}
+.item-number:hover {
+  border-color: hsl(228, 100%, 84%);
+  background-color: hsl(228, 100%, 84%);
+  color: hsl(213, 96%, 18%);
+}
+
+.item-description p {
+  font-size: 0.85rem;
+  color: hsl(229, 24%, 87%);
+}/*# sourceMappingURL=App.css.map */
