@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Info from "../Step-1/Step-1";
-import Plan from "../Step-2/Step-2";
-import AddOn from "../Step-3/Step-3";
-import Summary from "../Step-4/Step-4";
+import Info from "../Step-1/Info";
+import Plan from "../Step-2/Plan";
+import AddOn from "../Step-3/AddOn";
+import Summary from "../Step-4/Summary";
 
 function App() {
   return (
