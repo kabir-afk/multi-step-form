@@ -69,8 +69,11 @@ ul {
   border-radius: 100%;
   padding: 0.5em 0.75em;
   margin-right: 1em;
+  color: inherit;
+  background-color: transparent;
 }
-.item-number:hover {
+.item-number:hover, .item-number:focus, .item-number:active {
+  cursor: pointer;
   border-color: hsl(228, 100%, 84%);
   background-color: hsl(228, 100%, 84%);
   color: hsl(213, 96%, 18%);

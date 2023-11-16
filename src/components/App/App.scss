@@ -77,7 +77,13 @@ ul {
     border-radius: 100%;
     padding: 0.5em 0.75em;
     margin-right: 1em;
-    &:hover{
+    color: inherit;
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
         border-color: $Pastel-blue;
         background-color: $Pastel-blue;
         color: $Marine-blue;

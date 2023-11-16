@@ -16,22 +16,22 @@ function App() {
             <ul>
               <li>
                 <Link className="nav-item" to="/Info">
-                  <p className="item-number">1</p> <p className="item-description"><p>Step 1</p> Your Info</p>
+                  <button className="item-number">1</button> <p className="item-description"><p>Step 1</p> Your Info</p>
                 </Link>
               </li>
               <li>
                 <Link className="nav-item" to="/Plan">
-                  <p className="item-number">2</p> <p className="item-description"><p>Step 2</p> Select Plan</p>
+                  <button className="item-number">2</button> <p className="item-description"><p>Step 2</p> Select Plan</p>
                 </Link>
               </li>
               <li>
                 <Link className="nav-item" to="/AddOn">
-                  <p className="item-number">3</p> <p className="item-description"><p>Step 3</p> Add-Ons</p>
+                  <button className="item-number">3</button> <p className="item-description"><p>Step 3</p> Add-Ons</p>
                 </Link>
               </li>
               <li>
                 <Link className="nav-item" to="/Summary">
-                  <p className="item-number">4</p> <p className="item-description"><p>Step 4</p> Summary</p>
+                  <button className="item-number">4</button> <p className="item-description"><p>Step 4</p> Summary</p>
                 </Link>
               </li>
             </ul>
