@@ -1,0 +1,46 @@
+@import '../Variables/Variable.scss';
+
+form {
+    // border: 2px solid red;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+h1 {
+    color: $Marine-blue;
+    margin-top: 1em;
+}
+
+h1+p {
+    margin: 0.5em 0;
+    color: $Cool-gray;
+}
+
+label {
+    color: $Marine-blue;
+    margin: 1em 0 0.2em;
+}
+
+input {
+    border: 2px solid $Light-gray;
+    font-family: inherit;
+    padding: 1em 0.5em;
+    font-size: 17px;
+    border-radius: 10px;
+    color: $Marine-blue;
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+        border-color: $Purplish-blue;
+        outline: thin;
+    }
+
+    &[type="number"]::-webkit-inner-spin-button,
+    &[type="number"]::-webkit-outer-spin-button {
+        display: none;
+    }
+}

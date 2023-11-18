@@ -21,14 +21,14 @@ body {
 }
 
 .hero-container {
-    width: 75%;
+    width: 70%;
     height: 97vh;
     margin: 5% auto;
     padding: 1em;
     background-color: $White;
     border-radius: 20px;
     display: flex;
-    // justify-content: ;
+    justify-content: space-between;
 }
 
 .sr-only {

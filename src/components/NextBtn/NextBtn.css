@@ -1,0 +1,22 @@
+.nextBtn {
+  cursor: pointer;
+  border: none;
+  outline: transparent;
+  box-shadow: none;
+  border-radius: 10px;
+  width: 20%;
+  font-family: inherit;
+  font-weight: 500;
+  background-color: hsl(243, 100%, 62%);
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.75em;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+}
+.nextBtn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}/*# sourceMappingURL=NextBtn.css.map */

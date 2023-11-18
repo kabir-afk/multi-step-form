@@ -5,7 +5,6 @@ import Plan from "../Step-2/Plan";
 import AddOn from "../Step-3/AddOn";
 import Summary from "../Step-4/Summary";
 import "./App.css";
-
 function App() {
   return (
     <>
@@ -16,22 +15,34 @@ function App() {
             <ul>
               <li>
                 <Link className="nav-item" to="/Info">
-                  <button className="item-number">1</button> <p className="item-description"><p>Step 1</p> Your Info</p>
+                  <button className="item-number">1</button>{" "}
+                  <span className="item-description">
+                    <p>Step 1</p> Your Info
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link className="nav-item" to="/Plan">
-                  <button className="item-number">2</button> <p className="item-description"><p>Step 2</p> Select Plan</p>
+                  <button className="item-number">2</button>{" "}
+                  <span className="item-description">
+                    <p>Step 2</p> Select Plan
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link className="nav-item" to="/AddOn">
-                  <button className="item-number">3</button> <p className="item-description"><p>Step 3</p> Add-Ons</p>
+                  <button className="item-number">3</button>{" "}
+                  <span className="item-description">
+                    <p>Step 3</p> Add-Ons
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link className="nav-item" to="/Summary">
-                  <button className="item-number">4</button> <p className="item-description"><p>Step 4</p> Summary</p>
+                  <button className="item-number">4</button>{" "}
+                  <span className="item-description">
+                    <p>Step 4</p> Summary
+                  </span>
                 </Link>
               </li>
             </ul>
