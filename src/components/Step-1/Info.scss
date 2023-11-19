@@ -27,6 +27,7 @@ label {
 input {
     border: 2px solid $Light-gray;
     font-family: inherit;
+    text-decoration: none;
     padding: 1em 0.5em;
     font-size: 17px;
     border-radius: 10px;
@@ -43,4 +44,13 @@ input {
     &[type="number"]::-webkit-outer-spin-button {
         display: none;
     }
+}
+.flex{
+    // border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+.errorMsg{
+    color: red;
 }
