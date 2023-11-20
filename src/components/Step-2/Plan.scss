@@ -1,0 +1,77 @@
+@import '../Variables/Variable.scss';
+
+.plan-flex {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.plan {
+    cursor: pointer;
+    border: 2px solid $Cool-gray;
+    width: 30%;
+    border-radius: 10px;
+    padding: 1em 0.5em;
+
+    img {
+        margin-bottom: 2em;
+    }
+}
+
+.plan-heading {
+    color: $Marine-blue;
+    font-weight: 500;
+}
+
+/* ToggleSwitch.css */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch label {
+    background-color: $Marine-blue;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.toggle-switch label:before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    aspect-ratio: 1;
+    left: 3px;
+    bottom: 1px;
+    background-color: $White;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.toggle-switch input:checked+label:before {
+    transform: translateX(16px);
+}

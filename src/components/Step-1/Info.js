@@ -5,18 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function Info() {
   const [nameError, setNameError] = useState(false);
-  const [nameErrorMsg, setNameErrorMsg] = useState("");
+  const [nameErrorMsg, setNameErrorMsg] = useState("Invalid character in name");
+  // const history = useNavigate();
   function ValidateName(e) {
     const validNameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
-    if (e.target.value !== "") {
-      if (validNameRegex.test(e.target.value)) {
-        setNameError(false);
-        setNameErrorMsg("Invalid character in name");
-      } else {
-        setNameError(true);
-      }
+    if (validNameRegex.test(e.target.value)) {
+      setNameError(false);
     } else {
-      setNameErrorMsg("This field is required");
+      setNameError(true);
     }
   }
   function ErrorMsg() {

@@ -52,5 +52,6 @@ input {
     align-items: last baseline;
 }
 .errorMsg{
-    color: red;
+    color: $Strawberry-red;
+    font-weight: 500;
 }

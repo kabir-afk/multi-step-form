@@ -46,5 +46,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .errorMsg {
-  color: red;
+  color: hsl(354, 84%, 57%);
+  font-weight: 500;
 }/*# sourceMappingURL=Info.css.map */

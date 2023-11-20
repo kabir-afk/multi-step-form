@@ -44,8 +44,11 @@ body {
 
 nav {
     // border: 2px solid red;
+    border-radius: 10px;
+    overflow: hidden;
     background-image: url('/public/assets/images/bg-sidebar-desktop.svg');
     background-repeat: no-repeat;
+    background-size: cover;
     width: 278px;
     height: 100%;
     @include flex();
