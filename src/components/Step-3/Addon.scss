@@ -1,0 +1,75 @@
+@import '../Variables/Variable.scss';
+
+@mixin flex() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addon {
+    border: 2px solid $Light-gray;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding: 0em 0.75em 0.75em;
+    display: flex;
+    align-items: center;
+
+    &:first-of-type {
+        margin-top: 2em;
+    }
+
+    article {
+        // border: 2px solid red;
+        color: $Cool-gray;
+        margin-left: 1em;
+        margin-right: auto;
+
+        .plan-heading {
+            margin-bottom: 0.2em;
+        }
+
+        p {
+            font-size: 0.875rem;
+        }
+    }
+}
+
+.plan-heading {
+    color: $Marine-blue;
+    font-weight: 500;
+}
+
+.checkbox {
+    border: 2px solid $Cool-gray;
+    @include flex();
+    // overflow: hidden;
+    margin-right: 1em;
+    height: fit-content;
+
+    input {
+        display: none;
+    }
+
+    img {
+        // margin: 0 50%;
+        border: 2px solid black;
+        // visibility: hidden;
+    }
+
+    // .checked {
+    //     visibility: visible;
+    // }
+
+    .custom-checkbox {
+        width: 20px;
+        aspect-ratio: 1;
+        background: $Purplish-blue;
+        cursor: pointer;
+        @include flex();
+    }
+
+    input:checked+.custom-checkbox {
+        border: none;
+        // background: transparent;
+    }
+}
