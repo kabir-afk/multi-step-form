@@ -1,22 +1,20 @@
-.nextBtn {
+.prevBtn {
   cursor: pointer;
   border: none;
   outline: transparent;
   box-shadow: none;
   border-radius: 10px;
-  width: 20%;
   font-family: inherit;
-  font-weight: 500;
-  background-color: hsl(243, 100%, 62%);
-  background-color: hsl(213, 96%, 18%);
-  color: hsl(0, 0%, 100%);
-  padding: 0.75em;
+  font-weight: 700;
+  background-color: transparent;
+  color: hsl(231, 11%, 63%);
+  padding: 1em;
   position: absolute;
   top: 100%;
   left: 0%;
-  transform: translate(-100%, -100%);
+  transform: translate(0%, -100%);
 }
-.nextBtn:hover {
+.prevBtn:hover {
   cursor: pointer;
-  opacity: 0.9;
+  color: hsl(213, 96%, 18%);
 }/*# sourceMappingURL=PrevBtn.css.map */

@@ -1,23 +1,21 @@
 @import '../Variables/Variable.scss';
-.nextBtn {
+.prevBtn {
     cursor: pointer;
     border: none;
     outline: transparent;
     box-shadow: none;
     border-radius: 10px;
-    width: 20%;
     font-family: inherit;
-    font-weight: 500;
-    background-color: $Purplish-blue;
-    background-color: $Marine-blue;
-    color: $White;
-    padding: 0.75em;
+    font-weight: 700;
+    background-color: transparent;
+    color: $Cool-gray;
+    padding: 1em;
     position: absolute;
     top: 100%;
     left: 0%;
-    transform: translate(-100% ,-100%);
+    transform: translate(0% ,-100%);
     &:hover{
         cursor: pointer;
-        opacity: 0.9;
+        color: $Marine-blue;
     }
 }

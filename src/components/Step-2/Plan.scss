@@ -1,34 +1,56 @@
 @import '../Variables/Variable.scss';
 
 .plan-flex {
-    border: 2px solid red;
+    // border: 2px solid red;
+    border-radius: 10px;
+    margin-top: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $Magnolia;
+
+    P {
+        font-weight: 500;
+    }
 }
 
 .plans {
-    border: 2px solid red;
+    // border: 2px solid red;
     display: flex;
     justify-content: space-between;
     margin-top: 2em;
 }
 
 .plan {
+    border: 1px solid $Cool-gray;
     cursor: pointer;
-    border: 2px solid $Cool-gray;
     width: 30%;
     border-radius: 10px;
     padding: 1em 0.5em;
+    color: $Cool-gray;
+    font-size: 0.875rem;
+
+    p {
+        margin: 0.5rem 0;
+    }
 
     img {
         margin-bottom: 2em;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $Purplish-blue;
+    }
 }
+
+// background-color: $Magnolia;
 
 .plan-heading {
     color: $Marine-blue;
     font-weight: 500;
+    font-size: 1rem;
 }
 
 /* ToggleSwitch.css */
@@ -37,6 +59,7 @@
     display: inline-block;
     width: 35px;
     height: 34px;
+    margin: 0 1em 1em;
 }
 
 .toggle-switch input {
@@ -74,4 +97,12 @@
 
 .toggle-switch input:checked+label:before {
     transform: translateX(16px);
+}
+
+.monthly {
+    color: $Marine-blue;
+}
+
+.yearly {
+    color: $Cool-gray;
 }
