@@ -18,58 +18,65 @@
         margin-top: 2em;
     }
 
-    article {
-        // border: 2px solid red;
-        color: $Cool-gray;
-        margin-left: 1em;
-        margin-right: auto;
+}
 
-        .plan-heading {
-            margin-bottom: 0.2em;
-        }
+label {
+    // border: 2px solid red;
+    color: $Cool-gray;
+    margin-right: auto;
 
-        p {
-            font-size: 0.875rem;
-        }
+    .plan-heading {
+        margin-bottom: 0.2em;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+
+    &+label {
+        position: relative;
+        padding-left: 2rem;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    &+label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        width: 18px;
+        aspect-ratio: 1;
+        border: 2px solid $Cool-gray;
+        border-radius: 5px;
+        outline: thin;
+        background: $White;
+    }
+
+    &:checked+label::before {
+        border: 2px solid $Purplish-blue;
+        background: $Purplish-blue;
+    }
+
+    &:checked+label::after {
+        content: "";
+        position: absolute;
+        top: 57.5%;
+        left: 3px;
+        transform: translateY(-50%);
+        width: 16px;
+        aspect-ratio: 1;
+        background-image: url('/public/assets/images/icon-checkmark.svg');
+        background-repeat: no-repeat;
     }
 }
 
 .plan-heading {
     color: $Marine-blue;
     font-weight: 500;
-}
-
-.checkbox {
-    border: 2px solid $Cool-gray;
-    @include flex();
-    // overflow: hidden;
-    margin-right: 1em;
-    height: fit-content;
-
-    input {
-        display: none;
-    }
-
-    img {
-        // margin: 0 50%;
-        border: 2px solid black;
-        // visibility: hidden;
-    }
-
-    // .checked {
-    //     visibility: visible;
-    // }
-
-    .custom-checkbox {
-        width: 20px;
-        aspect-ratio: 1;
-        background: $Purplish-blue;
-        cursor: pointer;
-        @include flex();
-    }
-
-    input:checked+.custom-checkbox {
-        border: none;
-        // background: transparent;
-    }
 }
