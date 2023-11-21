@@ -86,4 +86,9 @@ ul {
 .item-description p {
   font-size: 0.85rem;
   color: hsl(229, 24%, 87%);
+}
+
+.active {
+  border-color: hsl(243, 100%, 62%);
+  background-color: hsl(217, 100%, 97%);
 }/*# sourceMappingURL=App.css.map */

@@ -8,27 +8,30 @@ function FreeMsg() {
 }
 
 export default function Plan(props) {
-  const { isToggled, handleChange, subscription } = props;
+  const { isToggled, handleChange, subscription,active} = props;
+  function selected(e) {
+    e.target.classList.toggle(active);
+  }
   return (
     <form>
       <h1>Select your plan</h1>
       <p>You have the option of monthly or yearly billing.</p>
       <div className="plans">
-        <div className="plan">
+        <div className="plan" onClick={selected}>
           <img src="/assets/images/icon-arcade.svg" alt="arcade-icon" />
           <div className="plan-heading">Arcade</div>
           <p>{subscription.arcade}</p>
           {isToggled && <FreeMsg />}
         </div>
 
-        <div className="plan">
+        <div className="plan" onClick={selected}>
           <img src="/assets/images/icon-advanced.svg" alt="advanced-icon" />
           <div className="plan-heading">Advanced</div>{" "}
           <p>{subscription.advanced}</p>
           {isToggled && <FreeMsg />}
         </div>
 
-        <div className="plan">
+        <div className="plan" onClick={selected}>
           <img src="/assets/images/icon-pro.svg" alt="pro-icon" />
           <div className="plan-heading">Pro</div> <p>{subscription.pro}</p>
           {isToggled && <FreeMsg />}
