@@ -4,6 +4,7 @@ import Info from "../Step-1/Info";
 import Plan from "../Step-2/Plan";
 import AddOn from "../Step-3/AddOn";
 import Summary from "../Step-4/Summary";
+import Success from '../Step-5/Success';
 import "./App.css";
 function App() {
   const active = "active";
@@ -96,6 +97,7 @@ function App() {
               element={<AddOn subscription={subscription} active={active} />}
             />
             <Route path="/Summary" element={<Summary />} />
+            <Route path="/Success" element={<Success />} />
           </Routes>
         </Router>
       </div>

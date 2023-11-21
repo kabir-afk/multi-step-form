@@ -1,0 +1,13 @@
+.successMsg {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.successMsg p {
+  line-height: 1.3rem;
+  text-align: center;
+}/*# sourceMappingURL=Success.css.map */

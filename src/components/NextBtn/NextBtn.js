@@ -1,8 +1,8 @@
-import './NextBtn.css';
-export default function NextBtn() {
-    return (
-      <button type="submit" className="nextBtn">
-        Next Step
-      </button>
-    );
-  }
+import "./NextBtn.css";
+export default function NextBtn(props) {
+  return (
+    <button type="submit" className="nextBtn">
+      {props.confirm ? props.confirm : "Next Step"}
+    </button>
+  );
+}
