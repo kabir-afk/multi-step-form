@@ -3,7 +3,8 @@ import NextBtn from "../NextBtn/NextBtn";
 import PrevBtn from "../PrevBtn/PrevBtn";
 import { Link } from "react-router-dom";
 import "./Addon.css";
-export default function AddOn() {
+export default function AddOn(props) {
+  const{subscription} = props
   return (
     <form>
       <h1>Pick add-ons</h1>
@@ -15,7 +16,7 @@ export default function AddOn() {
           <div className="plan-heading">Online service</div>
           <p>Access to multiplayer games</p>
         </label>
-        <div className="monthly">+$1/mo</div>
+        <div className="monthly">+{subscription.service}</div>
       </div>
 
       <div className="addon">
@@ -24,7 +25,7 @@ export default function AddOn() {
           <div className="plan-heading">Larger storage</div>
           <p>Extra 1TB of cloud save</p>
         </label>
-        <div className="monthly">+$2/mo</div>
+        <div className="monthly">+{subscription.storage}</div>
       </div>
 
       <div className="addon">
@@ -33,7 +34,7 @@ export default function AddOn() {
           <div className="plan-heading">Customizable Profile</div>
           <p>Custom theme on your profile</p>
         </label>
-        <div className="monthly">+$2/mo</div>
+        <div className="monthly">+{subscription.profile}</div>
       </div>
 
       <Link to="/Plan">

@@ -1,4 +1,4 @@
-import React from "react";
+import {useState }from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Info from "../Step-1/Info";
 import Plan from "../Step-2/Plan";
@@ -6,6 +6,36 @@ import AddOn from "../Step-3/AddOn";
 import Summary from "../Step-4/Summary";
 import "./App.css";
 function App() {
+  const [isToggled, setToggled] = useState(false);
+  const [subscription, setSubscription] = useState({
+    arcade: "$9/mo",
+    advanced: "$12/mo",
+    pro: "$15/mo",
+    service:"$1/mo",
+    storage:"$2/mo",
+    profile:"$2/mo",
+  });
+
+  const handleChange = () => {
+    setToggled(!isToggled);
+    isToggled
+      ? setSubscription({
+          arcade: "$9/mo",
+          advanced: "$12/mo",
+          pro: "$15/mo",
+          service:"$1/mo",
+          storage:"$2/mo",
+          profile:"$2/mo",
+        })
+      : setSubscription({
+          arcade: "$90/yr",
+          advanced: "$120/yr",
+          pro: "$150/yr",
+          service:"$10/yr",
+          storage:"$20/yr",
+          profile:"$20/yr",
+        });
+  };
   return (
     <>
       <h1 className="sr-only">Multi Step Form</h1>
@@ -49,8 +79,13 @@ function App() {
           </nav>
           <Routes>
             <Route path="/Info" element={<Info />} />
-            <Route path="/Plan" element={<Plan />} />
-            <Route path="/Addon" element={<AddOn />} />
+            <Route
+              path="/Plan"
+              element={
+                <Plan isToggled = {isToggled} handleChange={handleChange} subscription={subscription} />
+              }
+            />
+            <Route path="/Addon" element={<AddOn subscription={subscription}/>} />
             <Route path="/Summary" element={<Summary />} />
           </Routes>
         </Router>
