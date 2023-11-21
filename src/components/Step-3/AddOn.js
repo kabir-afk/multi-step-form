@@ -10,8 +10,7 @@ export default function AddOn() {
       <p>Add-ons help enhance your gaming experience.</p>
 
       <div className="addon">
-        {/* <img src="/assets/images/icon-checkmark.svg" alt="icon-check" /> */}
-        <input type="checkbox" id="service" />
+        <input type="checkbox" className="chekcbox" id="service" />
         <label htmlFor="service">
           <div className="plan-heading">Online service</div>
           <p>Access to multiplayer games</p>
@@ -20,8 +19,7 @@ export default function AddOn() {
       </div>
 
       <div className="addon">
-        {/* <img src="/assets/images/icon-checkmark.svg" alt="icon-check" /> */}
-        <input type="checkbox" id="storage" />
+        <input type="checkbox" className="chekcbox" id="storage" />
         <label htmlFor="storage">
           <div className="plan-heading">Larger storage</div>
           <p>Extra 1TB of cloud save</p>
@@ -30,8 +28,7 @@ export default function AddOn() {
       </div>
 
       <div className="addon">
-        {/* <img src="/assets/images/icon-checkmark.svg" alt="icon-check" /> */}
-        <input type="checkbox" id="profile" />
+        <input type="checkbox" className="chekcbox" id="profile" />
         <label htmlFor="profile">
           <div className="plan-heading">Customizable Profile</div>
           <p>Custom theme on your profile</p>

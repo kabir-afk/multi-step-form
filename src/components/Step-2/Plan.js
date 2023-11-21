@@ -44,7 +44,8 @@ export default function Plan() {
 
         <div className="plan">
           <img src="/assets/images/icon-advanced.svg" alt="advanced-icon" />
-          <div className="plan-heading">Advanced</div> <p>{subscription.advanced}</p>
+          <div className="plan-heading">Advanced</div>{" "}
+          <p>{subscription.advanced}</p>
           {isToggled && <FreeMsg />}
         </div>
 
@@ -56,14 +57,8 @@ export default function Plan() {
       </div>
       <div className="plan-flex">
         <p className={isToggled ? "yearly" : "monthly"}>Monthly</p>
-        <div className="toggle-switch">
-          <input
-            type="checkbox"
-            id="toggle"
-            checked={isToggled}
-            onChange={handleChange}
-          />
-          <label htmlFor="toggle"></label>
+        <div className={"toggle-switch"} onClick={handleChange}>
+          <div className={`slider ${isToggled ? 'on' : 'off'}`}></div>
         </div>
         <p className={isToggled ? "monthly" : "yearly"}>Yearly</p>
       </div>
