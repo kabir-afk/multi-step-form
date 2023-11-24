@@ -26,10 +26,13 @@
     border: 1px solid $Cool-gray;
     cursor: pointer;
     width: 30%;
+    font-family: inherit;
+    text-align: left;
     border-radius: 10px;
     padding: 1em 0.5em;
     color: $Cool-gray;
     font-size: 0.875rem;
+    background-color: $White;
 
     p {
         margin: 0.5rem 0;
@@ -43,10 +46,10 @@
     &:focus,
     &:active {
         border-color: $Purplish-blue;
+        background-color: $Magnolia;
     }
 }
 
-// background-color: $Magnolia;
 
 .plan-heading {
     color: $Marine-blue;

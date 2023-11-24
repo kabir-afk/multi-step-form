@@ -8,34 +8,31 @@ function FreeMsg() {
 }
 
 export default function Plan(props) {
-  const { isToggled, handleChange, subscription,active} = props;
-  function selected(e) {
-    e.target.classList.toggle(active);
-  }
+  const { isToggled, handleChange, subscription} = props;
   return (
     <form>
       <h1>Select your plan</h1>
       <p>You have the option of monthly or yearly billing.</p>
       <div className="plans">
-        <div className="plan" onClick={selected}>
+        <button className="plan" onClick={(e)=>{e.preventDefault()}}>
           <img src="/assets/images/icon-arcade.svg" alt="arcade-icon" />
           <div className="plan-heading">Arcade</div>
           <p>{subscription.arcade}</p>
           {isToggled && <FreeMsg />}
-        </div>
+        </button>
 
-        <div className="plan" onClick={selected}>
+        <button className="plan" onClick={(e)=>{e.preventDefault()}}>
           <img src="/assets/images/icon-advanced.svg" alt="advanced-icon" />
           <div className="plan-heading">Advanced</div>{" "}
           <p>{subscription.advanced}</p>
           {isToggled && <FreeMsg />}
-        </div>
+        </button>
 
-        <div className="plan" onClick={selected}>
+        <button className="plan" onClick={(e)=>{e.preventDefault()}}>
           <img src="/assets/images/icon-pro.svg" alt="pro-icon" />
           <div className="plan-heading">Pro</div> <p>{subscription.pro}</p>
           {isToggled && <FreeMsg />}
-        </div>
+        </button>
       </div>
       <div className="plan-flex">
         <p className={isToggled ? "yearly" : "monthly"}>Monthly</p>

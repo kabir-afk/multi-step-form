@@ -88,7 +88,6 @@ function App() {
                   isToggled={isToggled}
                   handleChange={handleChange}
                   subscription={subscription}
-                  active={active}
                 />
               }
             />

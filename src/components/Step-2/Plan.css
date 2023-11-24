@@ -21,10 +21,13 @@
   border: 1px solid hsl(231, 11%, 63%);
   cursor: pointer;
   width: 30%;
+  font-family: inherit;
+  text-align: left;
   border-radius: 10px;
   padding: 1em 0.5em;
   color: hsl(231, 11%, 63%);
   font-size: 0.875rem;
+  background-color: hsl(0, 0%, 100%);
 }
 .plan p {
   margin: 0.5rem 0;
@@ -34,6 +37,7 @@
 }
 .plan:hover, .plan:focus, .plan:active {
   border-color: hsl(243, 100%, 62%);
+  background-color: hsl(217, 100%, 97%);
 }
 
 .plan-heading {
